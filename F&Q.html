@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact & FAQ - Finance Climatique</title>
+    <!-- Font Awesome 6 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Lien vers le CSS externe -->
+    <link rel="stylesheet" href="F&Q.css">
+</head>
+<body>
+<!-- BARRE DE NAVIGATION (nav bar) -->
+<nav class="navbar">
+  
+    
+    <div class="logo"><a href="index.html">
+         <img src="/image/sonatrach.png" alt="SONATRACH PPC Logo" width=40px></a></div>
+
+    <ul class="nav-links" >
+        <li class="nav-item"><a style="color: var(--gris-fonce);" href="index.html">Accueil</a></li>
+        <li class="nav-item"><a style="color: var(--gris-fonce);" href="test.html">Acteurs financiers</a></li>
+        <!-- <li class="nav-item"><a style="color: var(--gris-fonce);" href="index.html">Projets</a></li> -->
+        <li class="nav-item"><a style="color: var(--gris-fonce);" href="inscreption.html">Événement</a></li>
+        <li class="nav-item"><a style="color: var(--gris-fonce);" href="F&Q.html">Contact / FAQ</a></li>
+    </ul>
+    <!-- Bouton inscription -->
+    
+    <button class="btn-inscription">
+        <a href="inscreption.html#inscription">Inscription</a>
+    </button>
+
+
+
+</nav>
+    <!-- SECTION CONTACT -->
+   <!-- SECTION CONTACT -->
+<section id="contact" class="section contact-section">
+    <h2 class="section-title">Contactez-nous</h2>
+    <div class="section-sub">
+        Une question sur la finance climatique ou les crédits carbone ? Notre équipe vous répond dans les plus brefs délais.
+    </div>
+
+    <div class="contact-container">
+        <!-- Formulaire de contact -->
+        <form id="contactForm" class="contact-form">
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="contact_nom"><i class="fas fa-user"></i> Nom complet *</label>
+                    <input type="text" id="contact_nom" name="nom" placeholder="Dupont" required>
+                </div>
+                <div class="form-group">
+                    <label for="contact_prenom"><i class="fas fa-user"></i> Prénom *</label>
+                    <input type="text" id="contact_prenom" name="prenom" placeholder="Jean" required>
+                </div>
+            </div>
+
+            
+            <div class="form-group full-width">
+                <label for="contact_sujet"><i class="fas fa-tag"></i> Sujet *</label>
+                <select id="contact_sujet" name="sujet" required>
+                    <option value="">Sélectionnez un sujet</option>
+                    <option value="finance_climatique">Finance climatique</option>
+                    <option value="credit_carbone">Crédit carbone</option>
+                    <option value="marche_carbone">Marché carbone</option>
+                    <option value="inscription">Inscription au workshop</option>
+                    <option value="autre">Autre question</option>
+                </select>
+            </div>
+
+            <div class="form-group full-width">
+                <label for="contact_message"><i class="fas fa-comment-dots"></i> Message *</label>
+                <textarea id="contact_message" name="message" rows="5" placeholder="Décrivez votre demande ou question..." required></textarea>
+            </div>
+
+            <div class="form-group full-width btn-group">
+                <button type="submit" class="btn-submit">
+                    <i class="fas fa-paper-plane"></i> Envoyer le message
+                </button>
+                <button type="reset" class="btn-reset">
+                    <i class="fas fa-eraser"></i> Effacer
+                </button>
+            </div>
+
+            <p class="form-notice" style="color: red;">* Champs obligatoires — Notre équipe vous répond sous 48h.</p>
+            <div id="contactMessageStatus" class="status-message"></div>
+        </form>
+    </div>
+</section>
+
+    
+
+    <!-- SECTION FAQ -->
+    <section id="faq" class="section faq-section">
+        <h2 class="section-title">Foire aux questions</h2>
+        <div class="section-sub">
+            Retrouvez les réponses aux questions les plus fréquentes sur la finance climatique et les crédits carbone.
+        </div>
+
+        <div class="faq-container">
+            <!-- FAQ Item 1 -->
+            <div class="faq-item">
+                <div class="faq-question">
+                    <span>Qu'est-ce que la finance climatique ?</span>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>La finance climatique désigne l'ensemble des flux financiers (publics, privés, nationaux, internationaux) destinés à soutenir des actions d'atténuation et d'adaptation au changement climatique. Elle inclut les investissements dans les énergies renouvelables, l'efficacité énergétique, les infrastructures résilientes et la transition vers une économie bas-carbone.</p>
+                </div>
+            </div>
+
+            <!-- FAQ Item 2 -->
+            <div class="faq-item">
+                <div class="faq-question">
+                    <span>Comment fonctionne le marché du carbone ?</span>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>Le marché du carbone est un système d'échange de quotas d'émission de CO₂. Il repose sur le principe "pollueur-payeur" : les entreprises reçoivent ou achètent des droits à émettre du carbone. Si elles émettent moins que leur quota, elles peuvent vendre leurs crédits excédentaires à d'autres entreprises qui dépassent leurs limites. Cela crée une incitation financière à réduire les émissions.</p>
+                </div>
+            </div>
+
+            <!-- FAQ Item 3 -->
+            <!-- <div class="faq-item">
+                <div class="faq-question">
+                    <span>Qu'est-ce que l'Article 6 de l'Accord de Paris ?</span>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>L'Article 6 de l'Accord de Paris établit un cadre pour la coopération internationale en matière de réduction des émissions. Il permet aux pays de transférer des crédits carbone (résultats de réduction d'émissions) entre eux via des mécanismes de marché. Cela favorise des solutions plus économiques et encourage les investissements dans des projets bas-carbone à l'échelle mondiale.</p>
+                </div>
+            </div> -->
+
+            <!-- FAQ Item 4 -->
+            <div class="faq-item">
+                <div class="faq-question">
+                    <span>Quels sont les principaux instruments de finance climatique ?</span>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>Les principaux instruments incluent : les obligations vertes (green bonds), les fonds d'investissement climatique, les prêts à taux préférentiels pour projets verts, les subventions directes, les mécanismes de partage de risques, et les crédits carbone. Les banques de développement et les institutions internationales comme le Fonds Vert pour le Climat jouent un rôle clé.</p>
+                </div>
+            </div>
+
+            <!-- FAQ Item 5 -->
+            <div class="faq-item">
+                <div class="faq-question">
+                    <span>Comment les pays en développement peuvent-ils accéder aux financements climatiques ?</span>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>Les pays en développement peuvent accéder aux financements via le Fonds Vert pour le Climat, le Fonds pour l'Environnement Mondial, l'Adaptation Fund, ou des mécanismes bilatéraux. Ils doivent généralement soumettre des plans d'investissement et des projets répondant à des critères stricts de durabilité, de transparence et d'impact climatique mesurable.</p>
+                </div>
+            </div>
+
+            <!-- FAQ Item 6 -->
+            <div class="faq-item">
+                <div class="faq-question">
+                    <span>Quelle différence entre crédit carbone et compensation carbone ?</span>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>Un crédit carbone représente une tonne de CO₂ évitée ou séquestrée. La compensation carbone est l'action d'acheter ces crédits pour neutraliser ses propres émissions. En pratique, une entreprise calcule son empreinte carbone, puis achète des crédits certifiés pour financer des projets de réduction d'émissions ailleurs (reforestation, énergies renouvelables, etc.).</p>
+                </div>
+            </div>
+
+            <!-- FAQ Item 7 -->
+            <div class="faq-item">
+                <div class="faq-question">
+                    <span>Quels sont les obstacles à la mise en place de marchés carbone efficaces ?</span>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>Les principaux obstacles incluent : le manque de standards internationaux harmonisés, les risques de double comptage des réductions d'émissions, la faiblesse des systèmes de mesure et de vérification dans certains pays, les coûts de transaction élevés, et la difficulté à garantir l'additionnalité (le projet doit réellement réduire les émissions par rapport à un scénario sans projet).</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Message de succès caché pour le formulaire -->
+    <div id="successModal" class="modal">
+        <div class="modal-content">
+            <i class="fas fa-check-circle" style="color: #21992B; font-size: 4rem;"></i>
+            <h3>Message envoyé !</h3>
+            <p>Merci pour votre message. Notre équipe vous répondra dans les plus brefs délais.</p>
+            <button class="modal-close">Fermer</button>
+        </div>
+    </div>
+
+
+  <footer class="footer" id="contact-footer">
+    <div class="footer-container">
+        <div class="footer-col">
+         <div class="logo"><a href="/home">
+         <img src="/image/sonatrach.png" alt="SONATRACH PPC Logo" width=40px></a></div>
+
+            <div class="social-icons">
+                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#" aria-label="Vimeo"><i class="fab fa-vimeo-v"></i></a>
+                <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+        <div class="footer-col">
+            <h4>Explorer</h4>
+            <p><a href="#hero">Accueil</a></p>
+            <p><a href="#services">Services</a></p>
+            <p><a href="#apropos">À propos</a></p>
+            <p><a href="#chiffres">Impact</a></p>
+        </div>
+        <div class="footer-col">
+            <h4>Contact</h4>
+            <p><i class="fas fa-envelope"></i> hello@elanvisuel.com</p>
+            <p><i class="fas fa-phone-alt"></i> +33 (0)1 23 45 67 89</p>
+            <p><i class="fas fa-map-marker-alt"></i> 24 Rue de la Création, 75004 Paris</p>
+        </div>
+        <div class="footer-col">
+            <h4>Horaires</h4>
+            <p>Ven - Sam : 9h30 – 19h00</p>
+            
+            <p><i class="far fa-clock"></i> Disponible 24/7 pour vos besoins</p>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>© 2026 sonatrach — Tous droits réservés | Mentions légales | Politique de confidentialité</p>
+        <p style="margin-top: 0.5rem; font-size:0.75rem;">.....</p>
+    </div>
+</footer>
+
+    <script >
+        // ===== GESTION DU FORMULAIRE DE CONTACT =====
+const contactForm = document.getElementById('contactForm');
+const modal = document.getElementById('successModal');
+const modalClose = document.querySelector('.modal-close');
+
+// Fonction pour afficher le modal de succès
+function showSuccessModal() {
+    modal.classList.add('show');
+}
+
+// Fermer le modal
+modalClose.addEventListener('click', () => {
+    modal.classList.remove('show');
+});
+
+// Fermer le modal en cliquant en dehors
+modal.addEventListener('click', (e) => {
+    if (e.target === modal) {
+        modal.classList.remove('show');
+    }
+});
+
+// Gestionnaire d'envoi du formulaire
+contactForm.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    
+    // Récupérer les données du formulaire
+    const formData = new FormData(contactForm);
+    const formObject = {};
+    formData.forEach((value, key) => {
+        formObject[key] = value;
+    });
+    
+    // Validation supplémentaire
+    if (!formObject.nom || !formObject.prenom || !formObject.email || !formObject.sujet || !formObject.message) {
+        alert('Veuillez remplir tous les champs obligatoires.');
+        return;
+    }
+    
+    // Validation email
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(formObject.email)) {
+        alert('Veuillez entrer une adresse email valide.');
+        return;
+    }
+    
+    // Simulation d'envoi (à remplacer par votre backend)
+    // Dans un environnement réel, vous feriez un fetch vers votre serveur
+    console.log('Données envoyées :', formObject);
+    
+    // Simuler un délai d'envoi
+    const submitBtn = document.querySelector('#contactForm .btn-submit');
+    const originalText = submitBtn.innerHTML;
+    submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Envoi en cours...';
+    submitBtn.disabled = true;
+    
+    setTimeout(() => {
+        submitBtn.innerHTML = originalText;
+        submitBtn.disabled = false;
+        
+        // Afficher le modal de succès
+        showSuccessModal();
+        
+        // Réinitialiser le formulaire
+        contactForm.reset();
+    }, 1000);
+    
+    // Note : Pour une vraie intégration, remplacez le setTimeout par :
+    /*
+    try {
+        const response = await fetch('/api/contact', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(formObject)
+        });
+        if (response.ok) {
+            showSuccessModal();
+            contactForm.reset();
+        }
+    } catch (error) {
+        alert('Erreur lors de l\'envoi. Veuillez réessayer.');
+    }
+    */
+});
+
+// ===== GESTION DE LA FAQ (ACCORDÉON) =====
+const faqItems = document.querySelectorAll('.faq-item');
+
+faqItems.forEach(item => {
+    const question = item.querySelector('.faq-question');
+    
+    question.addEventListener('click', () => {
+        // Fermer tous les autres items
+        faqItems.forEach(otherItem => {
+            if (otherItem !== item && otherItem.classList.contains('active')) {
+                otherItem.classList.remove('active');
+            }
+        });
+        
+        // Basculer l'item actuel
+        item.classList.toggle('active');
+    });
+});
+
+// Ouvrir le premier item par défaut (optionnel)
+if (faqItems.length > 0) {
+    faqItems[0].classList.add('active');
+}
+
+// ===== ANIMATION AU SCROLL =====
+// Observer pour ajouter des animations quand les éléments apparaissent
+const observerOptions = {
+    threshold: 0.1,
+    rootMargin: '0px 0px -50px 0px'
+};
+
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.style.opacity = '1';
+            entry.target.style.transform = 'translateY(0)';
+        }
+    });
+}, observerOptions);
+
+// Appliquer l'animation aux cartes d'information et aux items FAQ
+document.querySelectorAll('.info-card, .faq-item').forEach(el => {
+    el.style.opacity = '0';
+    el.style.transform = 'translateY(20px)';
+    el.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+    observer.observe(el);
+});
+
+// ===== RÉINITIALISATION DU FORMULAIRE =====
+const resetBtn = document.querySelector('#contactForm .btn-reset');
+resetBtn.addEventListener('click', () => {
+    // Confirmation avant réinitialisation
+    if (confirm('Êtes-vous sûr de vouloir effacer tous les champs ?')) {
+        contactForm.reset();
+    }
+});
+
+console.log('Site chargé - Charte couleurs: #21992B, #F9DC5D, #4CB7B2, #81D537');
+    </script>
+    
+    <!-- // Optionnel : Ajout d'un effet au clic pour chaque icône
+document.querySelectorAll('.icon').forEach(icon => {
+    icon.addEventListener('click', () => {
+        alert(icon.getAttribute('data-tooltip'));
+    });
+}); -->
+</body>
+</html>
+
+ 
